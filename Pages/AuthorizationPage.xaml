@@ -1,0 +1,118 @@
+﻿<Page x:Class="SberCloud.Pages.AuthorizationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SberCloud.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AuthorizationPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="103*"/>
+            <ColumnDefinition Width="166*"/>
+            <ColumnDefinition Width="103*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="450"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0"
+                    VerticalAlignment="Top"
+                    Width="800"
+                    Height="20"
+                    Background="#343F48"
+                    Margin="0,-20,-2,0" 
+                    Grid.ColumnSpan="4">
+            <Image Source="/Image/LOGO.png"
+                   Height="18"
+                   Margin="0,0,630,0"/>
+            <Button 
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Right"
+                    Margin="0,-18,10,0"
+                    Background="#CB6565"
+                    Width="10"
+                    Height="10"/>
+            <Button 
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Right"
+                    Margin="0,-18,25,0"
+                    Background="#C4C4C4"
+                    Height="10"
+                    Width="10"/>
+            <Button 
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Right"
+                    Margin="0,-18,40,0"
+                    Background="#C4C4C4"
+                    Height="10"
+                    Width="10"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <StackPanel 
+                    Orientation="Horizontal"
+                    VerticalAlignment="Top">
+                <Image Source="/Image/Logo.jpg" 
+                   HorizontalAlignment="Center" 
+                   Height="42" 
+                   Width="42"
+                   Margin="80,70,0,0"/>
+                <TextBlock Text="SBER"
+                       Margin="5,80,0,0"
+                       FontWeight="Bold"
+                       FontSize="23"/>
+                <TextBlock Text="CLOUD"
+                       Margin="5,80,0,0"
+                       FontSize="23"
+                       FontWeight="Black"
+                       Foreground="#00EA95"/>
+            </StackPanel>
+            <StackPanel >
+                <TextBlock Text="Войти в SberCloud"
+                           Margin="80,20,0,0"
+                           FontSize="16"
+                           Foreground="#343F48"/>
+                <TextBlock Text="Логин"
+                           Margin="80,15,0,0"/>
+                <TextBox Text="  Username or email address"
+                         Foreground="Gray"
+                         Margin="50,5,20,0"
+                         Height="23"
+                         Padding="2"
+                         />
+                <TextBlock Text="Пароль"
+                           Margin="80,15,0,0"/>
+                <TextBox Text="  Password"
+                         Foreground="Gray"
+                         Margin="50,5,20,0"
+                         Height="23"
+                         Padding="2"/>
+                <Button Content="Войти"
+                        Height="30"
+                        Width="120"
+                        Margin="0,20,0,0"
+                        Foreground="White"
+                        Background="#343F48"
+                        Style="{StaticResource BtnWithCornerRadius}"/>
+                <Button
+                    FontWeight="Bold"
+                    Background="#07E897"
+                    Margin="0,10,0,0"
+                    Width="170"
+                    Height="35"
+                    Style="{StaticResource BtnWithCornerRadius}">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Image/LogoButton.PNG"
+                               Height="24" 
+                               Width="17"/>
+                        <TextBlock Text=" Вход через СберID"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

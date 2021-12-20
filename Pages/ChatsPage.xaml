@@ -1,0 +1,390 @@
+﻿<Page x:Class="SberCloud.Pages.ChatsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SberCloud.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" 
+      d:DesignWidth="800"
+      Title="ChatsPage">
+
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="185"/>
+            <ColumnDefinition Width="61.692"/>
+            <ColumnDefinition Width="169.308"/>
+            <ColumnDefinition Width="380"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="33"/>
+            <RowDefinition Height="253"/>
+            <RowDefinition Height="164"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0"
+                    VerticalAlignment="Top"
+                    Width="800"
+                    Height="20"
+                    Background="#343F48"
+                    Margin="1,-20,-1,0" 
+                    Grid.ColumnSpan="4">
+            <Image Source="/Image/LOGO.png"
+                   Height="18"
+                   Margin="0,0,630,0"/>
+            <Button 
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Right"
+                    Margin="0,-18,10,0"
+                    Background="#CB6565"
+                    Width="10"
+                    Height="10"/>
+            <Button 
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Right"
+                    Margin="0,-18,25,0"
+                    Background="#C4C4C4"
+                    Height="10"
+                    Width="10"/>
+            <Button 
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Right"
+                    Margin="0,-18,40,0"
+                    Background="#C4C4C4"
+                    Height="10"
+                    Width="10"/>
+        </StackPanel>
+        <StackPanel Grid.Column="0"
+                    Background="#07CC85" Grid.RowSpan="3">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/Image/HomeIcon.png"
+                       Margin="10,30,0,0"/>
+                <TextBlock Text="Главная"
+                       Margin="10,30,0,0"
+                       FontSize="17"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/Image/ContactIcon.png" 
+                       Height="22"
+                Margin="10,30,0,0"/>
+                <TextBlock Text="Контакты"
+                       Margin="10,30,0,0"
+                       FontSize="17"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/Image/Head.png" 
+                       Margin="10,27,0,0"
+                       Height="25"/>
+                <TextBlock Text="Личный кабинет"
+                       Margin="6,30,0,0"
+                       FontSize="17"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/Image/CloseIcon.png"
+                           Height="25"
+                       Margin="10,40,0,0"/>
+                <TextBlock Text="Выйти"
+                       Margin="10,43,0,0"
+                       FontSize="17"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="3">
+            <TextBlock Text="Чаты"
+                       Margin="9,10,0,0"
+                       FontSize="24"
+                       FontWeight="DemiBold"/>
+            <TextBlock Text="   Search for messages or users..."
+                       Margin="9,15,20,0"
+                       Background="#EDEDED"
+                       Height="25"
+                       FontWeight="DemiBold"
+                       Padding="2"/>
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Vertical">
+                    <Grid>
+                        <Image Source="/Image/a.png" 
+                       Height="35"
+                       Margin="10,10,5,0"/>
+                        <Ellipse Fill="#00EA95"
+                                 Height="9"
+                                 Width="9"
+                                 Margin="30,35,0,0"/>
+                    </Grid>
+                    <TextBlock Text="Такаши"
+                               Margin="10,0,0,0"
+                               FontSize="9"
+                               FontWeight="DemiBold"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <Grid>
+                        <Image Source="/Image/a.png" 
+                       Height="35"
+                       Margin="3,10,5,0"/>
+                        <Ellipse Fill="#00EA95"
+                                 Height="9"
+                                 Width="9"
+                                 Margin="30,35,0,0"/>
+                    </Grid>
+                    <TextBlock Text="Майки"
+                               Margin="7,0,0,0"
+                               FontSize="9"
+                               FontWeight="DemiBold"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <Grid>
+                        <Image Source="/Image/a.png"
+                       Height="35"
+                       Margin="3,10,5,0"/>
+                        <Ellipse Fill="#00EA95"
+                                 Height="9"
+                                 Width="9"
+                                 Margin="30,35,0,0"/>
+                    </Grid>
+                    <TextBlock Text="Дракен"
+                               Margin="6,0,0,0"
+                               FontSize="9"
+                               FontWeight="DemiBold"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <Grid>
+                        <Image Source="/Image/a.png"
+                       Height="35"
+                       Margin="3,10,5,0"/>
+                        <Ellipse Fill="#00EA95"
+                                 Height="9"
+                                 Width="9"
+                                 Margin="30,35,0,0"/>
+                    </Grid>
+                    <TextBlock Text="Такемичи"
+                               Margin="0,0,0,0"
+                               FontSize="9"
+                               FontWeight="DemiBold"/>
+                </StackPanel>
+                <StackPanel>
+                    <Image Source="/Image/a.png" 
+                       Height="35"
+                       Margin="3,10,5,0"/>
+                    <TextBlock Text="Казутора"
+                               Margin="3,0,0,0"
+                               FontSize="9"
+                               FontWeight="DemiBold"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Background="#EDEDED"
+                        Margin="10,10,0,0"
+                        Orientation="Horizontal">
+                <Image Source="/Image/a.png" 
+                       Height="30"
+                       Margin="5,4,0,4"/>
+                <StackPanel Orientation="Vertical">
+                    <Grid>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Нахоя Кавата"
+                               FontSize="10"
+                               Margin="15,5,0,0"
+                               FontWeight="DemiBold"/>
+                            <TextBlock Text="10:31 am"
+                                   FontSize="10"
+                                   Margin="50,5,0,0"/>
+                            <Ellipse Fill="#00EA95"
+                             Height="12"
+                             Width="12"
+                             Margin="6,0,0,5"/>
+                            <TextBlock Text="27"
+                                       Margin="-10,1,0,0"
+                                       FontSize="7"
+                                       FontWeight="DemiBold"/>
+                        </StackPanel>
+                    </Grid>
+                    <TextBlock Text="Нахоя Кавата: улыбайся, бр..."
+                               FontSize="10"
+                               Margin="15,1,0,0"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Background="#EDEDED"
+                        Margin="10,10,0,0"
+                        Orientation="Horizontal">
+                <Image Source="/Image/a.png" 
+                       Height="30"
+                       Margin="5,4,0,4"/>
+                <StackPanel Orientation="Vertical">
+                    <Grid>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Такемичи Ханагаки"
+                               FontSize="10"
+                               Margin="15,5,0,0"
+                               FontWeight="DemiBold"/>
+                            <TextBlock Text="5:46 am"
+                                   FontSize="10"
+                                   Margin="22,5,0,0"/>
+                            <Ellipse Fill="#00EA95"
+                             Height="12"
+                             Width="12"
+                             Margin="11,0,0,5"/>
+                            <TextBlock Text="9"
+                                       Margin="-8,1,0,0"
+                                       FontSize="7"
+                                       FontWeight="DemiBold"/>
+                        </StackPanel>
+                    </Grid>
+                    <TextBlock Text="Такемичи Ханагаки: я не сд..."
+                               FontSize="10"
+                               Margin="15,1,0,0"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Background="#EDEDED"
+                        Margin="10,10,0,0"
+                        Orientation="Horizontal">
+                <Image Source="/Image/a.png" 
+                       Height="30"
+                       Margin="5,4,0,4"/>
+                <StackPanel Orientation="Vertical">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Казутора Ханемия"
+                               FontSize="10"
+                               Margin="15,5,0,0"
+                               FontWeight="DemiBold"/>
+                        <TextBlock Text="7:02 am"
+                                   FontSize="10"
+                                   Margin="26,5,0,0"/>
+
+                    </StackPanel>
+                    <TextBlock Text="Казутора Ханемия: прости"
+                               FontSize="10"
+                               Margin="15,1,0,0"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Column="3"
+                    Background="#EDEDED" Grid.RowSpan="3">
+            <Grid Height="50"
+                  Margin="5,10,5,0">
+                <Image Source="/Image/a.png"
+                       Margin="0,0,250,-60"
+                       Height="35"/>
+                <Rectangle>
+                    <Rectangle.Fill>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                            <GradientStop Color="#07CC85" Offset="0"/>
+                            <GradientStop Color="#12BBA6" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Image Source="/Image/a.png"
+                       Margin="0,0,310,0"
+                       Height="35"/>
+                <TextBlock Text="Такемичи Ханагаки"
+                           Margin="55,10,0,0"
+                           FontWeight="DemiBold"/>
+                <Image Source="/Image/lupa.png"
+                       Margin="260,0,0,0"
+                       Height="20"/>
+                <Image Source="/Image/point.png" 
+                       Margin="320,0,0,0"
+                       Height="20"/>
+                <TextBlock Text="Онлайн"
+                           Margin="55,25,0,0"
+                           FontSize="10"/>
+            </Grid>
+            <StackPanel
+                     Margin="90,0,100,0"
+                     Height="20"
+                     Background="White">
+                <TextBlock Text="покеда"
+                       FontSize="8"
+                           Padding="3"/>
+            </StackPanel>
+            <Rectangle VerticalAlignment="Bottom"
+                           Height="1"
+                           Fill="#FFA7AAAE"
+                           Margin="0,20,0,0"
+                           Width="350"/>
+            <TextBlock     Background="#EDEDED"
+                           HorizontalAlignment="Left"
+                           Text="   27.10.2021 12:29 pm"
+                           FontSize="8"
+                           Margin="146,-7,0,0"
+                           Width="100"
+                           Padding="3"
+                           FontWeight="Bold"/>
+            <StackPanel
+                     Margin="180,10,60,0"
+                     Height="45"
+                     Background="White">
+                <TextBlock 
+                     Text="Санджиро Сано" 
+                     FontSize="9"
+                     FontWeight="DemiBold"
+                     Margin="3,3,0,0"/>
+                <TextBlock Text="Хей"
+                           FontSize="9"
+                           Margin="3,0,0,0"/>
+                <TextBlock Text="У меня есть  один вопрос."
+                           FontSize="9"
+                           Margin="3,0,0,0"/>
+            </StackPanel>
+            <Image Source="/Image/a.png" 
+                   Height="35"
+                   Margin="310,-30,0,0"/>
+            <StackPanel Background="White"
+                        Height="35"
+                        Margin="60,20,200,0">
+                <TextBlock Text="Такемичи Ханагаки"
+                           FontSize="9"
+                           FontWeight="DemiBold"
+                           Margin="5,3,0,0"/>
+                <TextBlock Text=" В чем дело, Майки?"
+                           FontSize="9"
+                           Margin="3,0,0,0"/>
+            </StackPanel>
+            <Image Source="/Image/a.png" 
+                   Height="35"
+                   Margin="0,-30,310,0"/>
+            <StackPanel Background="White"
+                        Height="35"
+                        Margin="180,20,60,0">
+                <TextBlock Text="Санджиро Сано"
+                           FontSize="9"
+                           FontWeight="DemiBold"
+                           Margin="3,3,0,0"/>
+                <TextBlock
+                           FontSize="9"
+                           Margin="3,0,0,0"><Run Text="Почему "/><Run Text="я еще жив?"/><LineBreak/><Run/></TextBlock>
+            </StackPanel>
+            <Image Source="/Image/a.png"
+                   Height="35"
+                   Margin="310,-30,0,0"/>
+            <StackPanel Background="White"
+                        Height="60"
+                        Margin="60,20,130,0">
+                <TextBlock Text="Такемичи Ханагаки"
+                           FontSize="9"
+                           FontWeight="DemiBold"
+                           Margin="3,3,0,0"/>
+                <TextBlock Text="Тыфы ыфлыьч жс=ыв"
+                           FontSize="9"
+                           Margin="3,0,0,0"/>
+
+            </StackPanel>
+            <Image Source="/Image/a.png"
+                 Height="35"
+                 Margin="0,-30,310,0"/>
+            <Grid>
+                <TextBox Margin="10,20,10,0"
+                     Height="40"
+                         BorderThickness="0"/>
+                <TextBlock Text="Type your message..."
+                           Margin="20,30,0,0"
+                           FontSize="10"/>
+                <Image Source="/Image/smile.png" 
+                       Height="17"
+                       Margin="240,20,0,0"/>
+                <Image Source="/Image/bulavka.png" 
+                       Height="17"
+                       Margin="285,20,0,0"/>
+                <Image Source="/Image/paperair.png" 
+                       Height="17"
+                       Margin="330,20,0,0" />
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Page>
